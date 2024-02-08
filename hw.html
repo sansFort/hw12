@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Examples</title>
+</head>
+<body>
+
+    <div id="addHtml"></div>
+
+    <div class="my-class">
+        Вміст, який буде приховано
+    </div>
+
+    <section>
+        <h1>Заголовок секції</h1>
+        <p>Вміст секції</p>
+    </section>
+
+    <div></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // 1. Додати новий HTML
+            $("#addHtml").html("<h1>Новий елемент</h1>");
+
+            // 2. Приховати елемент за класом
+            $(".my-class").hide();
+
+            // 3. Видалити елемент за тегом
+            $("section").remove();
+
+            // 4. Додати клас і текст до тега div
+            $("div").addClass("addClass").text("Lumos Maxima");
+
+        });
+    </script>
+
+</body>
+</html>
